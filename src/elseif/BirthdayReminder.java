@@ -10,22 +10,34 @@ public class BirthdayReminder {
 
 	public static void main(String[] args) {
 	
+	
 		// 1. correct the birthdays for your family below
-		String momsBirthday = "January 24th";
-		String dadsBirthday = "June 9th";
-		String myBirthday = "April 16th";
+		String momsBirthday = "February 2th";
+		String dadsBirthday = "May 28th";
+		String myBirthday = "July 30th";
 
 		// 2. Find out which birthday the user wants and and store their response in a variable
-	
+		String Birthday = JOptionPane.showInputDialog("Whose birthday do you want?");
 		// 3. Print out what the user typed
-		
+		System.out.println(Birthday);
 		// 4. if user asked for "mom"
 			//print mom's birthday
+		if(Birthday.equals("Mom")) {
+			System.out.println(momsBirthday);
+		}
 		// 5. if user asked for "dad"
 			// print dad's birthday
+		if(Birthday.equals("Dad")) {
+			System.out.println(dadsBirthday);
+		}
 		// 6. if user asked for your name
 			// print myBirthday
+		if(Birthday.equals("Mine")) {
+			System.out.println(myBirthday);
+		}
 		//7. otherwise print "Sorry, i don't remember that person's birthday!"
-
+		else {
+			JOptionPane.showMessageDialog(null,"Sorry, i don't remember that person's birthday!");
+		}
 	} 
 }
